@@ -22,6 +22,10 @@ var colorCode = function() {
         } else {
             $(this).addClass("future");
         }
+
+        var tasks = $(this).attr("id");
+        var savedTasks = localStorage.getItem(tasks);
+        $(this).children(".description").val(savedTasks);
     })
 }
 colorCode();
@@ -29,24 +33,9 @@ colorCode();
 
 //eventlisten for onclick save btn to set text in local storage (setItem). Take the value 
 $(".saveBtn").click(function(){
-    
+    var tasks = $(".time-block").attr("id");
+    localStorage.setItem(".time-block", tasks);
 })
-// localStorage.setItem(taskDescription)
 
-$(".time-block").each(function(){
-    var key = $(this).attr("id");
-    var savedTasks = localStorage.getItem(key);
-    $(this).children(".description").val(savedTasks);
-}) 
-
-// var saveEvent = function() {
-//     localStorage.setItem('allEvents', JSON.stringify(correctCount));
-//     JSON.parse(localStorage.getItem('allEvents'));
-
-// blah.textcontent = (localStorage.getItem)
-
-//     var allEvents = [];
-// }
-// saveEvent();
 
 })
