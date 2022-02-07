@@ -9,4 +9,4 @@ library in order to include the date and time, which is an essential component t
 [Deployed Link](https://chloeyarb.github.io/Work-Day-Scheduler-5/)
 
 ## Screenshot of your deployed app
-[Screenshot](./images/Work Day Scheduler.png)
+[Screenshot](./images/Work-Day-Scheduler.png)
