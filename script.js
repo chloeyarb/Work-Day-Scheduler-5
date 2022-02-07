@@ -25,34 +25,28 @@ var colorCode = function() {
     })
 }
 colorCode();
+//Local Storage
 
+//eventlisten for onclick save btn to set text in local storage (setItem). Take the value 
+$(".saveBtn").click(function(){
+    
+})
+// localStorage.setItem(taskDescription)
 
+$(".time-block").each(function(){
+    var key = $(this).attr("id");
+    var savedTasks = localStorage.getItem(key);
+    $(this).children(".description").val(savedTasks);
+}) 
 
+// var saveEvent = function() {
+//     localStorage.setItem('allEvents', JSON.stringify(correctCount));
+//     JSON.parse(localStorage.getItem('allEvents'));
 
+// blah.textcontent = (localStorage.getItem)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//     var allEvents = [];
+// }
+// saveEvent();
 
 })
